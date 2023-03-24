@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  product_catalog_service:
+    build: ./product_catalog_service
+    ports:
+      - "8200:5000"
+  order_service:
+    build: ./order_service
+    ports:
+      - "8300:5001"
+
